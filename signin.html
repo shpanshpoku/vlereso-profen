@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kyçu - vlerëso profën</title>
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="title"><a href="index.html">vlerëso profën</a></div>
+        <nav>
+            <ul>
+                <li><a href="rrethNesh.html">rreth nesh</a></li>
+                <li><a href="kerko.html">kërko</a></li>
+                <li><a href="vlereso.html">vlerëso</a></li>
+                <li><a href="halloffame.html">hall of fame</a></li>
+                <li><a href="signin.html" class="right"><img src="img/profile.png" alt="Profili"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Auth Content -->
+    <main class="auth-container">
+        <div class="auth-header">
+            <h1>Mirësevini</h1>
+            <p>Hyni në llogarinë tuaj ose krijoni një të re</p>
+        </div>
+        
+        <div class="auth-tabs">
+            <a href="hyr.html" class="auth-tab">Hyr</a>
+            <div class="auth-tab active">Krijo Llogari</div>
+        </div>
+        
+        <form class="auth-form">
+            <div class="form-group">
+                <label for="name">Emri dhe Mbiemri</label>
+                <input type="text" id="name" placeholder="Shkruani emrin tuaj të plotë" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Shkruani email-in tuaj" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Fjalëkalimi</label>
+                <input type="password" id="password" placeholder="Krijoni një fjalëkalim" required minlength="8">
+            </div>
+            
+            <div class="form-group">
+                <label for="confirm-password">Konfirmo Fjalëkalimin</label>
+                <input type="password" id="confirm-password" placeholder="Përsëritni fjalëkalimin" required>
+            </div>
+            
+            <button type="submit" class="auth-button">Krijo Llogari</button>
+        </form>
+        
+        <div class="auth-footer">
+            <p>Keni tashmë një llogari? <a href="hyr.html">Hyni këtu</a></p>
+        </div>
+    </main>
+</body>
+</html>

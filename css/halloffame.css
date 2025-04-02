@@ -1,0 +1,156 @@
+/* Hall of Fame Page Styles */
+.hof-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+
+.page-title {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.professors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.professor-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.professor-card:hover {
+    transform: translateY(-5px);
+}
+
+.professor-img-container {
+    position: relative;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.professor-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 3px solid var(--tertiary-color);
+}
+
+.rating-badge {
+    position: absolute;
+    top: 10px;
+    right: calc(50% - 75px + 5px);
+    background-color: var(--button-color);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.professor-info {
+    text-align: center;
+}
+
+.professor-name {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.professor-subject {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.professor-university {
+    color: var(--other-color);
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .professors-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hof-container {
+        padding: 0 20px;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .professors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .professor-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-title {
+        font-size: 1.8rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1rem;
+    }
+    
+    .professors-grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .professor-card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+    }
+    
+    .professor-img-container {
+        margin-bottom: 0;
+    }
+    
+    .professor-img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .rating-badge {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+        right: calc(50% - 40px + 5px);
+    }
+}

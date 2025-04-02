@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vlerëso - vlerëso profën</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vlereso.css">
+</head>
+<body>
+    <!-- Nav bar -->
+    <header class="header">
+        <div class="title"><a href="index.html">vlerëso profën</a></div>
+        <nav>
+            <ul>
+                <li><a href="rrethNesh.html">rreth nesh</a></li>
+                <li><a href="kerko.html">kërko</a></li>
+                <li><a href="vlereso.html" class="active">vlerëso</a></li>
+                <li><a href="halloffame.html">hall of fame</a></li>
+                <li><a href="signin.html" class="right"><img src="img/profile.png" alt="Profili"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="vlereso-container">
+        <h1 class="page-title">Vlerësoni Profesorin Tuaj</h1>
+        
+        <form class="review-form">
+            <div class="form-group">
+                <label for="professor-name">Emri i Profesorit*</label>
+                <input type="text" id="professor-name" placeholder="Shkruani emrin e profesorit" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="university">Universiteti/Shkolla*</label>
+                <input type="text" id="university" placeholder="Shkruani emrin e institucionit" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Lënda*</label>
+                <input type="text" id="subject" placeholder="Shkruani emrin e lëndës" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Vlerësimi*</label>
+                <div class="rating-stars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <input type="hidden" id="rating-value" name="rating" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="headline">Titulli i Vlerësimit*</label>
+                <input type="text" id="headline" placeholder="P.sh. 'Profesor i shkëlqyer!'" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="review">Vlerësimi Juaj*</label>
+                <textarea id="review" rows="6" placeholder="Shkruani përvojën tuaj me këtë profesor..." required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-button">Posto Vlerësimin</button>
+        </form>
+    </main>
+</body>
+</html>

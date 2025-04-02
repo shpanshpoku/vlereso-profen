@@ -11,14 +11,98 @@
     <header class="header">
         <div class="title"><a href="index.html">vlerëso profën</a></div>
         <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="rrethNesh.html">rreth nesh</a></li>
                 <li><a href="kerko.html">kërko</a></li>
-                <li><a href="#">vlerëso</a></li>
-                <li><a href="#">hall of fame</a></li>
-                <li><a href="#" class="right"><img src="img/profile.png" alt=""></a></li>
+                <li><a href="vlereso.html">vlerëso</a></li>
+                <li><a href="halloffame.html">hall of fame</a></li>
+                <li><a href="signin.html" class="right"><img src="img/profile.png" alt="Profile" class="profile-img"></a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" placeholder="kërko shkollën apo profën" class="search-input" aria-label="Search for school or professor">
+                <button class="search-button">kërko</button>
+            </div>
+            <div class="search-options">
+                <a href="#" class="active">vlerësimi</a>
+                <a href="#">emri</a>
+            </div>
+        </section>
+
+        <!-- Professor Cards -->
+        <div class="professors-grid">
+            <!-- Professor Card 1 -->
+            <div class="professor-card">
+                <div class="card-content">
+                    <img src="img/teacher-profile.jpg" alt="Professor Ana Krasniqi" class="professor-img" loading="lazy">
+                    <div class="professor-info">
+                        <h2 class="professor-name">Ana Krasniqi</h2>
+                        <p class="university"><strong>Universitet i Prishtinës</strong></p>
+                        <p class="faculty">Fakulteti i Shkencave Matematiko - Natyrore</p>
+                        <div class="subject">
+                            <h3>Lënda: Matematikë</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating-section">
+                    <div class="average-rating">
+                        <p class="rating-text">mesatarja</p>
+                        <p class="rating-count">231 vlerësime</p>
+                        <div class="rating-score">4.7</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professor Card 2 -->
+            <div class="professor-card">
+                <div class="card-content">
+                    <img src="img/teacher dea.jpg" alt="Professor Dea Gashi" class="professor-img" loading="lazy">
+                    <div class="professor-info">
+                        <h2 class="professor-name">Dea Gashi</h2>
+                        <p class="university"><strong>University of Business and Technology</strong></p>
+                        <p class="faculty">Fakulteti i Shkencave Kompjuterike</p>
+                        <div class="subject">
+                            <h3>Lënda: Algoritmet</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating-section">
+                    <div class="average-rating">
+                        <p class="rating-text">mesatarja</p>
+                        <p class="rating-count">198 vlerësime</p>
+                        <div class="rating-score">4.5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professor Card 3 -->
+            <div class="professor-card">
+                <div class="card-content">
+                    <img src="img/teacher djale.jpg" alt="Professor Art Berisha" class="professor-img" loading="lazy">
+                    <div class="professor-info">
+                        <h2 class="professor-name">Art Berisha</h2>
+                        <p class="university"><strong>AAB</strong></p>
+                        <p class="faculty">Fakulteti i Psikologjisë</p>
+                        <div class="subject">
+                            <h3>Lënda: Filozofi</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating-section">
+                    <div class="average-rating">
+                        <p class="rating-text">mesatarja</p>
+                        <p class="rating-count">156 vlerësime</p>
+                        <div class="rating-score">4.3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

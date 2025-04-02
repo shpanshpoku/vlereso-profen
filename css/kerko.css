@@ -6,7 +6,6 @@
 }
 
 * {
-    background-color: #F7F7F7;
     font-family: "Inter", sans-serif;
     padding: 0;
     margin: 0;
@@ -14,6 +13,7 @@
 }
 
 body {
+    color: #F7F7F7;
     margin-top: 7px;
     padding: 0;
 }
@@ -55,4 +55,274 @@ body {
 .header img {
     width: 40px;
     height: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+.search-section {
+    margin-bottom: 30px;
+}
+
+.search-container {
+    gap: 10px;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 50px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.search-button {
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.search-options {
+    display: flex;
+    gap: 20px;
+}
+
+.search-options a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.search-options a.active {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Karta e Profesorit */
+.professor-card {
+    background-color: color(rgba(255, 255, 255, 0.8));
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0.3,0.5);
+}
+
+.professor-name {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.university {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.faculty {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.professor-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.subject h3 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--tertiary-color);
+}
+
+/* Add these styles to your existing CSS */
+
+/* Professor Card Layout */
+.professor-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-content {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+.professor-info {
+    flex: 1;
+}
+
+/* Rating Section */
+.rating-section {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid var(--tertiary-color);
+    padding-left: 20px;
+}
+
+.average-rating {
+    text-align: center;
+}
+
+.rating-text {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.rating-count {
+    color: var(--secondary-color);
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+
+.rating-score {
+    background-color: #F4F4F4;
+    border: var(--primary-color) 4px solid;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.professor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+/* ====================== */
+/* RESPONSIVE STYLES ONLY */
+/* ====================== */
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        margin: 0;
+    }
+    
+    .header ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .professor-card {
+        flex-direction: column;
+    }
+    
+    .rating-section {
+        border-left: none;
+        border-top: 1px solid var(--tertiary-color);
+        padding-left: 0;
+        padding-top: 20px;
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+    }
+    
+    .search-button {
+        width: 100%;
+    }
+    
+    .card-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .professor-card img {
+        margin-bottom: 15px;
+    }
+    
+    .subject h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .title a {
+        font-size: 1.8rem;
+    }
+    
+    .header ul {
+        gap: 15px;
+    }
+    
+    .search-options {
+        justify-content: center;
+    }
+    
+    .professor-name {
+        font-size: 1.3rem;
+    }
+    
+    .rating-score {
+        width: 60px;
+        height: 60px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .header ul {
+        gap: 10px;
+    }
+    
+    .header img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .search-input,
+    .search-button {
+        padding: 10px 15px;
+    }
+    
+    .professor-card {
+        padding: 15px;
+    }
 }
