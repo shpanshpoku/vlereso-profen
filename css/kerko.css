@@ -148,9 +148,6 @@ body {
     border-top: 1px solid var(--tertiary-color);
 }
 
-/* Add these styles to your existing CSS */
-
-/* Professor Card Layout */
 .professor-card {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
@@ -171,7 +168,6 @@ body {
     flex: 1;
 }
 
-/* Rating Section */
 .rating-section {
     width: 150px;
     display: flex;
@@ -220,9 +216,7 @@ body {
     object-fit: cover;
 }
 
-/* ====================== */
-/* RESPONSIVE STYLES ONLY */
-/* ====================== */
+/* Responsiviteti */
 
 @media (max-width: 1200px) {
     .container {

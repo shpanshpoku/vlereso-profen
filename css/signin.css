@@ -58,7 +58,7 @@ body {
     height: 40px;
 }
 
-/* Auth Page Styles */
+/* Container */
 .auth-container {
     max-width: 500px;
     margin: 40px auto;
@@ -145,19 +145,7 @@ body {
     background-color: #172a45;
 }
 
-.auth-footer {
-    text-align: center;
-    margin-top: 20px;
-    color: var(--secondary-color);
-}
-
-.auth-footer a {
-    color: var(--primary-color);
-    font-weight: 600;
-    text-decoration: none;
-}
-
-/* Responsive Styles */
+/* Responsiviteti */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;

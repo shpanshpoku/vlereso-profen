@@ -59,8 +59,6 @@ body {
 }
 
 /* Container */
-/* Replace your current container and related styles with these */
-
 .container {
     margin: 0 auto;
     padding: 0 20px;
@@ -367,7 +365,7 @@ button:hover {
     border: 1px solid var(--primary-color);
 }
 
-/* Responsive Design */
+/* Responsiviteti */
 @media (max-width: 1200px) {
     .how-it-works {
         max-width: 80%;

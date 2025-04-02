@@ -1,4 +1,3 @@
-/* Hall of Fame Page Styles */
 .hof-container {
     max-width: 1200px;
     margin: 40px auto;
@@ -90,7 +89,7 @@
     font-size: 0.9rem;
 }
 
-/* Responsive Styles */
+/* Responsiviteti */
 @media (max-width: 992px) {
     .professors-grid {
         grid-template-columns: repeat(3, 1fr);
